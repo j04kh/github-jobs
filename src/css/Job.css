@@ -1,0 +1,227 @@
+/* Variables */
+* {
+  text-decoration: none;
+}
+
+.main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #FFFFFF;
+  height: 114px;
+  width: 100%;
+  margin-top: 32px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.left-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container {
+  position: relative;
+  height: 90px;
+  width: 90px;
+  background-color: #F2F2F2;
+  top: 12px;
+  left: 12px;
+  border-radius: 4px;
+}
+
+.desc-container {
+  position: relative;
+  height: 75%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 24px;
+  margin-bottom: 0px;
+  top: 12px;
+  background-color: #FFFFFF;
+}
+
+.company-name {
+  position: relative;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #334680;
+}
+
+.job-position {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #334680;
+}
+
+.fulltime-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 63px;
+  height: 26px;
+  margin-left: 0px;
+  margin-top: 10px;
+  border: 1px solid #334680;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-time-text {
+  position: relative;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #334680;
+}
+
+.right-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.location-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  width: 50%;
+  background-color: transparent;
+  left: 50%;
+  bottom: 12px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.loc-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-right: 12px;
+  margin-left: 16px;
+}
+
+.right-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #B7BCCE;
+  right: 0;
+}
+
+#clock-icon {
+  height: 15px;
+  margin-right: 8.5px;
+}
+
+/*mobile*/
+@media (max-width: 965px) {
+  .main {
+    margin-top: 10px;
+    height: 150px;
+    width: auto;
+  }
+  .company-name {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .location-container {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px;
+    width: 70%;
+    background-color: transparent;
+    left: 100px;
+    bottom: 0px;
+    margin-top: 0px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .job-position {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .fulltime-container {
+    margin-top: 0;
+  }
+}
+
+/* very small mobiles */
+@media (max-width: 370px) {
+  .job-position {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .right-text {
+    font-size: 9px;
+  }
+  .fulltime-container {
+    height: 24px;
+  }
+  .full-time-text {
+    font-size: 10px;
+  }
+  .location-container {
+    left: 90px;
+  }
+  #clock-icon {
+    height: 12px;
+  }
+}
+/*# sourceMappingURL=Job.css.map */

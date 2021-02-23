@@ -1,0 +1,370 @@
+/* Variables */
+body {
+  background-color: #F6F7FB;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.App {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-right: 120px;
+  height: 100%;
+  width: 70%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-width: 1100px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.title.light {
+  font-weight: 300;
+}
+
+.main-container {
+  position: absolute;
+  background: #F6F7FB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.container-left {
+  width: 32%;
+  height: 100%;
+  background-color: #F6F7FB;
+  display: block;
+}
+
+.container-right {
+  width: 65%;
+  height: 100%;
+  background-color: #F6F7FB;
+}
+
+.list-jobs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Left side*/
+#location-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #B9BDCF;
+}
+
+.location-search-rectangle {
+  position: relative;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 48px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+}
+
+.icon {
+  position: relative;
+  height: 12px;
+  margin-left: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  opacity: 0.4;
+}
+
+.text-input-left, .text-input-left::-webkit-input-placeholder {
+  position: relative;
+  width: 100%;
+  border-style: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  color: #B9BDCF;
+  padding-left: 16px;
+}
+
+.text-input-left, .text-input-left:-ms-input-placeholder {
+  position: relative;
+  width: 100%;
+  border-style: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  color: #B9BDCF;
+  padding-left: 16px;
+}
+
+.text-input-left, .text-input-left::-ms-input-placeholder {
+  position: relative;
+  width: 100%;
+  border-style: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  color: #B9BDCF;
+  padding-left: 16px;
+}
+
+.text-input-left, .text-input-left::placeholder {
+  position: relative;
+  width: 100%;
+  border-style: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  color: #B9BDCF;
+  padding-left: 16px;
+}
+
+.city-checkboxes {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  height: 18px;
+  left: 15px;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 21px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #334680;
+  /* Hide the browser's default radio button */
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  /* When the radio button is checked, add a blue background */
+}
+
+.container input:checked ~ .checkmark {
+  background-color: transparent;
+  border: 1px solid #1E86FF;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #eeeeee;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #B9BDCF;
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #1E86FF;
+}
+
+/* Rect check*/
+/* The container */
+.container-rect {
+  display: block;
+  position: relative;
+  height: 18px;
+  left: 15px;
+  padding-left: 35px;
+  margin-top: 29px;
+  margin-bottom: 32px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 21px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #334680;
+  /* Hide the browser's default radio button */
+}
+
+.container-rect input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  /* When the radio button is checked, add a blue background */
+}
+
+.container-rect input:checked ~ .checkmark-rect {
+  background-color: transparent;
+  border: 1px solid #1E86FF;
+  /* Show the indicator (dot/circle) when checked */
+}
+
+.container-rect input:checked ~ .checkmark-rect:after {
+  display: block;
+}
+
+.container-rect:hover input ~ .checkmark-rect {
+  background-color: #eeeeee;
+}
+
+/* Create a custom radio button */
+.checkmark-rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #B9BDCF;
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+}
+
+.checkmark-rect:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Style the indicator (dot/circle) */
+.container-rect .checkmark-rect:after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  background: #1E86FF;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  margin-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #B9BDCF;
+}
+
+/*mobile*/
+@media (max-width: 965px) {
+  .App {
+    width: 98%;
+  }
+  .main-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-left {
+    width: 100%;
+  }
+  .container-right {
+    width: 100%;
+  }
+  .city-checkboxes {
+    margin-top: 27px;
+  }
+  .footer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=App.css.map */
