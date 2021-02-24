@@ -60,10 +60,7 @@
 .company-name {
   position: relative;
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font: 700 12px/14px "Roboto", sans-serif;
   color: #334680;
 }
 
@@ -71,10 +68,7 @@
   position: relative;
   margin-top: 8px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  font: 400 18px/21px "Roboto", sans-serif;
   color: #334680;
 }
 
@@ -102,10 +96,7 @@
 .full-time-text {
   position: relative;
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font: 700 12px/14px "Roboto", sans-serif;
   color: #334680;
 }
 
@@ -154,10 +145,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Roboto", sans-serif;
+  font: 700 12px/14px "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
   color: #B7BCCE;
   right: 0;
 }

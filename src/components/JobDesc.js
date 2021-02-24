@@ -40,7 +40,7 @@ const JobDesc = ({match}) => {
 
 				<div className="main-container">
 					<div className="container-left-jobDesc">
-					<Link to={`/`}>
+					<Link to={`/github-jobs`}>
 						<p className="text_left">Back to search</p>
 					</Link>
 						<p className="text_apply">HOW TO APPLY</p>

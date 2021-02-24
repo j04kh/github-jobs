@@ -1,7 +1,8 @@
 /* Variables */
-$poppins: 'Poppins', sans-serif;
-$montserrat: 'Montserrat', sans-serif;
-$roboto: 'Roboto', sans-serif;
+$roboto-12: 700 12px/14px 'Roboto', sans-serif;
+$roboto-18: 400 18px/21px 'Roboto', sans-serif;
+
+
 $dark-blue: #334680;
 
 *{
@@ -52,10 +53,7 @@ $dark-blue: #334680;
 .company-name{
     position: relative;
     margin: 0;
-    font-family: $roboto;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+    font: $roboto-12;
     color: $dark-blue;
 }
 
@@ -63,10 +61,7 @@ $dark-blue: #334680;
     position: relative;
     margin-top: 8px;
     margin-bottom: 0;
-    font-family: $roboto;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+    font: $roboto-18;
     color: $dark-blue;
 }
 
@@ -87,10 +82,7 @@ $dark-blue: #334680;
 .full-time-text{
     position: relative;
     margin: 0;
-    font-family: $roboto;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+    font: $roboto-12;
     color: $dark-blue
 }
 
@@ -124,10 +116,8 @@ $dark-blue: #334680;
 
 .right-text{
     display: flex;
-    font-family: $roboto;
+    font: $roboto-12;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
     color: #B7BCCE;
     right: 0;
 }

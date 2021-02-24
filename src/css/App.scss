@@ -1,12 +1,14 @@
 
 /* Variables */
-$poppins: 'Poppins', sans-serif;
-$montserrat: 'Montserrat', sans-serif;
-$roboto: 'Roboto', sans-serif;
 $background-grey: #F6F7FB;
 $light-grey-text: #B9BDCF;
 $dark-blue: #334680;
 $checked-blue: #1E86FF;
+$poppins-title: 700 24px/36px 'Poppins', sans-serif;
+$poppins-700: 700 14px/21px 'Poppins', sans-serif;
+$roboto-400: 400 14px/21px 'Roboto', sans-serif;
+$poppins-500: 500 14px/21px 'Poppins', sans-serif;
+$montserrat: 14px/17px 'Montserrat', sans-serif;
 
 body{
   background-color: $background-grey;
@@ -31,11 +33,7 @@ body{
 }
 
 .title{
-  font-family: $poppins;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-
+  font: $poppins-title;
   &.light{
     font-weight: 300;
   }
@@ -75,10 +73,7 @@ body{
 /* Left side*/
 
 #location-label{
-  font-family: $poppins;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
+  font: $poppins-700;
   color: $light-grey-text;
 }
 
@@ -109,10 +104,9 @@ body{
   width: 100%;
   border-style: none;
   outline: none;
-  font-family: $roboto;
+  font: $roboto-400;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 14.06px;
+  line-height: 14px;
   color: $light-grey-text;
   padding-left: 16px;
   &::placeholder{
@@ -135,16 +129,12 @@ body{
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 14px;
-  line-height: 21px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: $poppins;
-  font-weight: 500;
+  font: $poppins-500;
   color: $dark-blue;
-
   /* Hide the browser's default radio button */
   input {
     position: absolute;
@@ -204,15 +194,12 @@ body{
   margin-top: 29px;
   margin-bottom: 32px;
   cursor: pointer;
-  font-size: 14px;
-  line-height: 21px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  color: #334680;
+  font: $poppins-500;
+  color: $dark-blue;
   /* Hide the browser's default radio button */
   input {
     position: absolute;
@@ -244,7 +231,7 @@ body{
   width: 18px;
   background-color: transparent;
   border-radius: 2px;
-  border: 1px solid #B9BDCF;
+  border: 1px solid $light-grey-text;
   /* Create the indicator (the dot/circle - hidden when not checked) */
   &:after {
     content: "";
@@ -261,7 +248,7 @@ body{
 	width: 13px;
 	height: 13px;
 	border-radius: 2px;
-  background: #1E86FF;
+  background: $checked-blue;
 }
 
 .footer{
@@ -272,9 +259,7 @@ body{
   bottom: 0;
   margin-bottom: 0;
   justify-content: center;
-  font-family: $montserrat;
-  font-size: 14px;
-  line-height: 17px;
+  font: $montserrat;
   color: $light-grey-text;
 }
 

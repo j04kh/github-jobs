@@ -56,7 +56,7 @@ const fullTimeHandler = () => {
 
     <Router>
       <Switch>
-      <Route exact path="/" >
+      <Route exact path="/github-jobs" >
         <div className="App">
           <h1 className="title">Github <span className="title light">Jobs</span></h1>
           <SearchBox search={jobSearch} setInput={setJobSearch} submit={searchBoxHandler} />
